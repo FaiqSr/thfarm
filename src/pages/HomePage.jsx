@@ -23,12 +23,12 @@ function HomePage() {
         <div className="text-center">
           <h1 className="text-3xl pb-6">Team</h1>
         </div>
-        <div className="columns-2 mx-auto gap-16">
+        <div className="columns-2 gap-16">
           <div className="container w-60 h-32 bg-second rounded-lg border"></div>
           <div className="container w-60 h-32 bg-second rounded-lg border"></div>
         </div>
       </section>
-      <section className="container border py-5  mx-auto my-24 flex-col max-w-5xl">
+      <section className="container border py-5  mx-auto my-24 flex items-center flex-col max-w-5xl">
         <div className="mx-10 px-10 py-5 ">
           <h1 className="text-3xl pb-2">Brocademy</h1>
           <p className="text-lg pb-5">
@@ -44,23 +44,22 @@ function HomePage() {
             Hubungi
           </button>
         </div>
-        <div className="container flex flex-row justify-center gap-7 px-5 py-5">
-          <div className="container w-60 h-80 bg-second rounded-lg border"></div>
-          <div className="container w-60 h-80 bg-second rounded-lg border"></div>
-          <div className="container w-60 h-80 bg-second rounded-lg border"></div>
+        <div className="container flex flex-row flex-wrap justify-center gap-7 px-5 py-5">
+          <div className="container max-w-60 h-80 bg-second rounded-lg border"></div>
+          <div className="container max-w-60 h-80 bg-second rounded-lg border"></div>
+          <div className="container max-w-60 h-80 bg-second rounded-lg border"></div>
         </div>
       </section>
       <section className="flex w-full bg-white-utama mx-auto items-center justify-center flex-col">
         <div>
           <h1 className="text-3xl my-5">Apa si kata orang?</h1>
         </div>
-        <div className="mx-auto gap-16 columns-2 pb-10">
-          <div className="container w-96 h-80 bg-second rounded-lg border"></div>
-          <div className="container w-96 h-80 bg-second rounded-lg border"></div>
+        <div className=" container flex flex-wrap justify-center mx-auto gap-16 columns-2 pb-10">
+          <div className="container max-w-96 h-80 bg-second rounded-lg border"></div>
+          <div className="container max-w-96 h-80 bg-second rounded-lg border"></div>
         </div>
       </section>
-
-      <section className="container border py-5  mx-auto my-24 flex-col max-w-5xl">
+      <section className="container border py-5  mx-auto my-24 flex items-center flex-col max-w-5xl">
         <div className="mx-10 px-10 py-5 ">
           <h1 className="text-3xl pb-2">Brocademy</h1>
           <p className="text-lg pb-5">
@@ -76,10 +75,10 @@ function HomePage() {
             Hubungi
           </button>
         </div>
-        <div className="container flex flex-row justify-center gap-7 px-5 py-5">
-          <div className="container w-60 h-80 bg-second rounded-lg border"></div>
-          <div className="container w-60 h-80 bg-second rounded-lg border"></div>
-          <div className="container w-60 h-80 bg-second rounded-lg border"></div>
+        <div className="container flex flex-row flex-wrap justify-center gap-7 px-5 py-5">
+          <div className="container max-w-60 h-80 bg-second rounded-lg border"></div>
+          <div className="container max-w-60 h-80 bg-second rounded-lg border"></div>
+          <div className="container max-w-60 h-80 bg-second rounded-lg border"></div>
         </div>
       </section>
     </div>
