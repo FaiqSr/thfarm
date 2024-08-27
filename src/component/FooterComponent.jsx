@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 function FooterComponent() {
   return (
@@ -72,7 +72,7 @@ function FooterComponent() {
         </div>
       </div>
       <div>
-        <div className="bg-primary w-full h-1"></div>
+        <div className="bg-black w-full h-0.5"></div>
       </div>
       <div className="text-center py-3">
         <h1>Copyright 2024</h1>
