@@ -19,13 +19,21 @@ function HomePage() {
           </p>
         </div>
       </header>
-      <section className="flex mx-auto w-full bg-white-utama pb-5 h-[250px] items-center flex-col justify-center ">
+      <section className="flex mx-auto w-full bg-white-utama pb-5 pt-5 min-h-[250px] items-center flex-col justify-center ">
         <div className="text-center">
           <h1 className="text-3xl pb-6">Team</h1>
         </div>
-        <div className="columns-2 gap-16">
-          <div className="container w-60 h-32 bg-second rounded-lg border"></div>
-          <div className="container w-60 h-32 bg-second rounded-lg border"></div>
+        <div className="container flex justify-center flex-wrap columns-2 gap-16 img">
+          <div className="max-w-60 rounded-lg">
+            <img
+              src="../../public/logo/Oranye Hitam Minimalis Pecel Lele Logo(4).png"
+              alt="N3B"
+              className="rounded-lg"
+            />
+          </div>
+          <div className="max-w-60 rounded-lg">
+            <img src="../../public/logo/Bubro_logo.png" alt="bubro" />
+          </div>
         </div>
       </section>
       <section className="container border py-5  mx-auto my-24 flex items-center flex-col max-w-5xl">
