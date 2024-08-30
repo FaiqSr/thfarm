@@ -14,7 +14,7 @@ function App() {
       <Routes>
         <Route path="/" Component={HomePage} />
         <Route path="/about" Component={AboutPage} />
-        <Route path="/marketplace" Component={MarketplacePage} />
+        <Route path="/market" Component={MarketplacePage} />
       </Routes>
       <FooterComponent />
     </div>
