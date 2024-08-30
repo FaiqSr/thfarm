@@ -38,16 +38,21 @@ function HomePage() {
       <section className="container border py-5  mx-auto my-24 flex items-center flex-col max-w-5xl">
         <div className="mx-10 px-10 py-5 ">
           <h1 className="text-6xl p-0 pb-3">Brocademy</h1>
-          <p className="text-lg pb-5 text-justify">
-            Selamat datang di Brocademy, program pelatihan interaktif untuk
-            anak-anak SD dan usia di bawahnya! Di sini, mereka belajar menanam
-            sayuran hidroponik dan beternak ikan seperti lele dengan cara yang
-            mudah dan menyenangkan. Brocademy mengajarkan pentingnya menjaga
-            lingkungan dan memproduksi makanan sendiri secara ramah lingkungan.
-            Pelajaran dikemas praktis dan seru, sehingga anak-anak bisa belajar
-            sambil bermain! <br />
+          <p className="text-lg pb-5 text-justify ">
+            Selamat datang di Brocademy, program pelatihan interaktif yang
+            dirancang khusus untuk anak-anak SD dan usia di bawahnya! Di sini,
+            mereka akan belajar cara menanam sayuran dengan metode hidroponik
+            dan beternak ikan seperti lele dengan cara yang mudah dan
+            menyenangkan.
           </p>
-          <p className="text-lg pb-5">
+          <p className="text-lg pb-5 text-justify ">
+            Dengan Brocademy, anak-anak tidak hanya belajar tentang pentingnya
+            menjaga lingkungan, tetapi juga bagaimana menghasilkan makanan
+            sendiri dengan cara yang ramah lingkungan. Pelajaran ini dikemas
+            dengan praktis dan penuh keseruan, sehingga si kecil bisa belajar
+            sambil bermain!
+          </p>
+          <p className="text-lg pb-5 text-justify ">
             Yuk, Bergabung dan Mulai Petualangan Belajar yang Menarik!
           </p>
           <button className=" rounded-lg  py-2 border text-lg px-10 hover:bg-white-utama transition-all">
@@ -70,7 +75,7 @@ function HomePage() {
         </div>
       </section>
       <section className="container border py-5  mx-auto my-24 flex items-center flex-col max-w-5xl">
-        <div className="mx-10 px-10 py-5 ">
+        <div className="mx-10 px-10 ">
           <h1 className="text-3xl pb-2">Produk</h1>
         </div>
         <div className="container flex flex-row flex-wrap justify-center gap-7 px-5 py-5">
@@ -79,9 +84,11 @@ function HomePage() {
           <div className="container max-w-60 h-80 bg-second rounded-lg border"></div>
         </div>
 
-        <button className=" rounded-lg  py-2 border text-lg px-10">
-          Hubungi
-        </button>
+        <a href="/market">
+          <button className=" rounded-lg  py-2 border text-lg px-10 hover:bg-white-utama active:bg-primary transition-all ease-out">
+            Barang lainnya
+          </button>
+        </a>
       </section>
     </div>
   );
