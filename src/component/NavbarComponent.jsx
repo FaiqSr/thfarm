@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { Search, Menu } from "react-feather";
+import { Search, Menu, ShoppingCart } from "react-feather";
+import { navbar } from "../data/web";
+import { NavLink } from "react-router-dom";
+
+import logo from "../assets/logo/nav-logo.png";
 
 function NavbarComponent() {
   const [open, setOpen] = useState("-right-96 w-96");
@@ -36,16 +40,16 @@ function NavbarComponent() {
         } transition-all z-10`}
       >
         <nav className="mx-auto flex items-center w-full justify-around ">
-          <div>
+          <div className="flex gap-3">
             <Search />
+
+            <a href="/market">
+              <ShoppingCart />
+            </a>
           </div>
-          <div>
-            <a className="text-2xl" href="/">
-              <img
-                src="../../public/logo/Oranye_Hitam_Minimalis_Pecel_Lele_Logo_3_-removebg-preview.png"
-                alt="bubro"
-                className="w-56 h-56"
-              />
+          <div className="max-w-40">
+            <a href="/">
+              <img src={logo} alt="bubro" className="" />
             </a>
           </div>
           <div>
@@ -56,14 +60,29 @@ function NavbarComponent() {
         </nav>
       </div>
       <div
-        className={` mx-auto flex fixed  flex-col items-center justify-start  h-full w-96 top-16 ${open} gap-10 transition-all  ${
+        className={` container mx-auto flex fixed  flex-col items-center justify-start  h-full w-96 top-16 ${open} gap-10 transition-all  ${
           changeColor ? "bg-primary pt-5 " : ""
         } `}
       >
-        <div className="flex flex-col justify-center gap-4 my-2">
-          <a href="about">About</a>
-          <a href="course">Course</a>
-          <a href="contact">Contact</a>
+        <div className="flex flex-col justify-center items-center gap-4 my-2">
+          {navbar.map((data) => {
+            return (
+              <div key={data.id} className="w-96">
+                <NavLink
+                  to={data.path}
+                  className={({ isActive, isPending }) =>
+                    isPending
+                      ? "pending"
+                      : isActive
+                      ? "bg-white-utama w-full px-5 py-2"
+                      : ""
+                  }
+                >
+                  {data.text}
+                </NavLink>
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>

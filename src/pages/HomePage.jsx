@@ -1,54 +1,56 @@
 import React from "react";
+import { team } from "../data/web";
 
 function HomePage() {
   return (
     <div>
       <header className="container mx-auto max-w-5xl mt-[70px] mb-[50px]">
         <div className="container mx-auto text-center pb-5">
-          <div className="container bg-third mx-auto w-full h-[345px]"></div>
+          <div className="container bg-third mx-auto w-full h-[345px] border"></div>
         </div>
         <div className="container mx-auto text-center">
           <h1 className="text-5xl">BuBro</h1>
-          <p className="text-lg">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure id
-            aspernatur reiciendis culpa debitis aperiam, recusandae porro.
-            Distinctio tempora quasi porro consectetur quam architecto, sapiente
-            quaerat vel, vero possimus consequatur velit, molestiae saepe
-            officia amet blanditiis earum sit unde! Ratione dolorum expedita
-            repudiandae quam alias vitae, quis exercitationem minus illo.
+          <p className="text-lg text-justify ">
+            <span className="font-semibold">BUBRO FARM </span>adalah perusahaan
+            pertanian modern yang mengkhususkan diri dalam budidaya hidroponik
+            dan akuakultur. Kami memadukan teknologi canggih dengan praktik
+            tradisional untuk menghasilkan produk berkualitas tinggi yang sehat
+            dan ramah lingkungan.
           </p>
         </div>
       </header>
-      <section className="flex mx-auto w-full bg-white-utama pb-5 pt-5 min-h-[250px] items-center flex-col justify-center ">
+      <section className="flex mx-auto w-full bg-white-utama py-5 min-h-[250px] items-center flex-col justify-center ">
         <div className="text-center">
           <h1 className="text-3xl pb-6">Team</h1>
         </div>
         <div className="container flex justify-center flex-wrap columns-2 gap-16 img">
-          <div className="max-w-60 rounded-lg">
-            <img
-              src="../../public/logo/Oranye Hitam Minimalis Pecel Lele Logo(4).png"
-              alt="N3B"
-              className="rounded-lg"
-            />
-          </div>
-          <div className="max-w-60 rounded-lg">
-            <img src="../../public/logo/Bubro_logo.png" alt="bubro" />
-          </div>
+          {team.map((data) => {
+            return (
+              <div key={data.id} className="container max-w-80 rounded">
+                <a href={data.tautan}>
+                  <img src={data.img} alt="bubro" className="rounded-lg" />
+                </a>
+              </div>
+            );
+          })}
         </div>
       </section>
       <section className="container border py-5  mx-auto my-24 flex items-center flex-col max-w-5xl">
         <div className="mx-10 px-10 py-5 ">
-          <h1 className="text-3xl pb-2">Brocademy</h1>
-          <p className="text-lg pb-5">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit eius
-            explicabo in voluptates! Saepe obcaecati aliquam explicabo
-            repellendus deleniti dignissimos rerum exercitationem, perspiciatis,
-            adipisci tempora molestias ratione aperiam eum quam voluptates
-            consequatur placeat natus accusantium veritatis, doloribus
-            aspernatur. Repudiandae dolore ut animi consequuntur commodi
-            veritatis porro, doloribus nulla vitae eius?
+          <h1 className="text-6xl p-0 pb-3">Brocademy</h1>
+          <p className="text-lg pb-5 text-justify">
+            Selamat datang di Brocademy, program pelatihan interaktif untuk
+            anak-anak SD dan usia di bawahnya! Di sini, mereka belajar menanam
+            sayuran hidroponik dan beternak ikan seperti lele dengan cara yang
+            mudah dan menyenangkan. Brocademy mengajarkan pentingnya menjaga
+            lingkungan dan memproduksi makanan sendiri secara ramah lingkungan.
+            Pelajaran dikemas praktis dan seru, sehingga anak-anak bisa belajar
+            sambil bermain! <br />
           </p>
-          <button className=" rounded-lg  py-2 border text-lg px-10">
+          <p className="text-lg pb-5">
+            Yuk, Bergabung dan Mulai Petualangan Belajar yang Menarik!
+          </p>
+          <button className=" rounded-lg  py-2 border text-lg px-10 hover:bg-white-utama transition-all">
             Hubungi
           </button>
         </div>
@@ -60,7 +62,7 @@ function HomePage() {
       </section>
       <section className="flex w-full bg-white-utama mx-auto items-center justify-center flex-col">
         <div>
-          <h1 className="text-3xl my-5">Apa si kata orang?</h1>
+          <h1 className="text-3xl my-5">Testimoni</h1>
         </div>
         <div className=" container flex flex-wrap justify-center mx-auto gap-16 columns-2 pb-10">
           <div className="container max-w-96 h-80 bg-second rounded-lg border"></div>
@@ -69,25 +71,17 @@ function HomePage() {
       </section>
       <section className="container border py-5  mx-auto my-24 flex items-center flex-col max-w-5xl">
         <div className="mx-10 px-10 py-5 ">
-          <h1 className="text-3xl pb-2">Brocademy</h1>
-          <p className="text-lg pb-5">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit eius
-            explicabo in voluptates! Saepe obcaecati aliquam explicabo
-            repellendus deleniti dignissimos rerum exercitationem, perspiciatis,
-            adipisci tempora molestias ratione aperiam eum quam voluptates
-            consequatur placeat natus accusantium veritatis, doloribus
-            aspernatur. Repudiandae dolore ut animi consequuntur commodi
-            veritatis porro, doloribus nulla vitae eius?
-          </p>
-          <button className=" rounded-lg  py-2 border text-lg px-10">
-            Hubungi
-          </button>
+          <h1 className="text-3xl pb-2">Produk</h1>
         </div>
         <div className="container flex flex-row flex-wrap justify-center gap-7 px-5 py-5">
           <div className="container max-w-60 h-80 bg-second rounded-lg border"></div>
           <div className="container max-w-60 h-80 bg-second rounded-lg border"></div>
           <div className="container max-w-60 h-80 bg-second rounded-lg border"></div>
         </div>
+
+        <button className=" rounded-lg  py-2 border text-lg px-10">
+          Hubungi
+        </button>
       </section>
     </div>
   );
