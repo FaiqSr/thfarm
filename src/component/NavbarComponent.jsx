@@ -42,10 +42,6 @@ function NavbarComponent() {
         <nav className="mx-auto flex items-center w-full justify-around ">
           <div className="flex gap-3">
             <Search />
-
-            <a href="/market">
-              <ShoppingCart />
-            </a>
           </div>
           <div className="max-w-40">
             <a href="/">
@@ -83,6 +79,10 @@ function NavbarComponent() {
               </div>
             );
           })}
+
+          <NavLink to="/market">
+            <ShoppingCart />
+          </NavLink>
         </div>
       </div>
     </div>
